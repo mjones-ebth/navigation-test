@@ -37,8 +37,7 @@ const ContactStackNavigator = () => {
 
 const MoreStackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={screenOptionStyle}>
-      <Stack.Screen name="MoreScreen" component={More} />
+    <Stack.Navigator screenOptions={{headerLeft: () => null}}>
       <Stack.Screen name="FAQ" component={Faq} />
       <Stack.Screen name="Press" component={Press} />
     </Stack.Navigator>
